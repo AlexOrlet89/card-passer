@@ -9,6 +9,8 @@ export default function ExecutePassButton({
   selectedCard,
   setSelectedCard,
 }) {
+  //passCard function
+
   return (
     <div className="execute-button" onClick={() => passCard(selectedCard)}>
       Pass <Card card={selectedCard} setSelectedCard={setSelectedCard} setFrom={setFrom} /> from{' '}
