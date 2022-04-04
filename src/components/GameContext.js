@@ -13,8 +13,8 @@ const GameProvider = ({ children }) => {
 
   return (
     <GameContext.Provider
-      value={
-        (deck,
+      value={{
+        deck,
         setDeck,
         playerOneHand,
         setPlayerOneHand,
@@ -27,8 +27,8 @@ const GameProvider = ({ children }) => {
         from,
         setFrom,
         to,
-        setTo)
-      }
+        setTo,
+      }}
     >
       {children}
     </GameContext.Provider>
